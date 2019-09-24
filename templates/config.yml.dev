@@ -1,0 +1,26 @@
+env: "development"
+port: "9101"
+http_port: "9101"
+cockroach:
+    host: "$dev_cockroach_host"
+    database: "$dev_cockroach_db_hello_service"
+    username: "$dev_cockroach_username"
+    password: "$dev_cockroach_password"
+sentry_dsn: "$sentry_dsn"
+log_level: "debug"
+disable_caching: false
+cache_ttl: 900000
+redis:
+    cache_host: "$dev_redis_host_hello_service"
+    lock_host: "$dev_redis_lock_host_hello_service"
+    nats_host: "$dev_redis_nats_host"
+    worker_broker_host: "$dev_redis_worker_broker_host"
+    worker_backend_host: "$dev_redis_worker_backend_host"
+nats_url: "$dev_nats_host"
+nats_cluster_id: "$dev_nats_cluster_id"
+services:
+    media_target: "media-service:9103"
+    idle_conn_pool: "100"
+    max_conn_pool: "200"
+rpc_server_timeout: 1000
+rpc_client_timeout: 1100
