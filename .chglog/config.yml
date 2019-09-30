@@ -2,7 +2,7 @@ style: gitlab
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://gitlab.kumparan.com/yowez/graphql-service
+  repository_url: https://github.com/kumparan/fer
 options:
   commits:
      filters:

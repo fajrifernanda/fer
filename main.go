@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitlab.com/fajrifernanda/kumpa-kit-go/cmd"
+	"github.com/kumparan/fer/cmd"
 )
 
 func main() {

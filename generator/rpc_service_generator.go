@@ -26,7 +26,6 @@ var (
 )
 
 func ReadServiceServer(servicename string, prefixPackage string, pbCorePath string) {
-	fmt.Println("Generating services/")
 	f, err := os.Open(pbCorePath)
 	check(err)
 	prefixPack = prefixPackage
@@ -64,8 +63,8 @@ func ReadServiceServer(servicename string, prefixPackage string, pbCorePath stri
 		serviceUrlProtoPath = prefixPackage + "/pb/" + getSimpleNameFromProtoPath(pbCorePath)
 
 		f.ImportAlias(serviceUrlProtoPath, "pb")
-		fmt.Println("Key", key)
-		fmt.Println("Value", value)
+		//fmt.Println("Key", key)
+		//fmt.Println("Value", value)
 
 		functions := strings.Split(value, "\n")
 
@@ -97,9 +96,6 @@ func ReadServiceServer(servicename string, prefixPackage string, pbCorePath stri
 		}
 
 	}
-
-	fmt.Println("services/ generated")
-
 }
 
 func getFunctionName(in string) (funcName string) {

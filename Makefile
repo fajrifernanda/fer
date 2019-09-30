@@ -6,7 +6,7 @@ run:
 	@go run main.go
 
 build:
-	@go build -o ./bin/trafo
+	@go build -o ./bin/fer
 
 changelog:
 	@git-chglog -o CHANGELOG.md

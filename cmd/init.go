@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
+	"github.com/kumparan/fer/generator"
 	"github.com/spf13/cobra"
-	"gitlab.com/fajrifernanda/kumpa-kit-go/generator"
 )
 
 // initCmd represents the init command
